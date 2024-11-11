@@ -2,11 +2,11 @@
 ## Overview
 This project uses a dimensional modeling approach to structure the Data Warehouse. This approach organizes data into fact tables and dimension tables, facilitating business intelligence (BI) analysis and allowing for insights from multiple perspectives.
 
-1. Modeling Techniques Used
-1.1. Dimensional Modeling
+### 1. Modeling Techniques Used
+   #### 1.1. Dimensional Modeling
 Dimensional modeling is based on creating a central fact table containing transactional or event data, with dimension tables that provide additional context. This model is ideal for data analysis and reporting in a Data Warehouse environment, as it structures information in a way that is easy for business users to query and interpret.
 
-1.2. Star Schema Structure
+  #### 1.2. Star Schema Structure
 Within the dimensional model, a star schema structure was used, where:
 
 The main fact table, Fact_Transactions, stores data related to user transactions (e.g., deposits and withdrawals).
