@@ -1,4 +1,35 @@
-# Bitsochallenge-- Data Modeling Documentation
+# Bitsochallenge
+# Execution Order and Files explanation
+## Prerequisites: 
+Update the config.py file with the connection parameters for the database server with the source data and the connection parameters for the server that would host the DWH
+
+## Execution Order:
+### 1- Create_Tables.py: 
+This file is run to create all the table structure needed for the DWH
+### 2- ETL_DWH.py:
+This file is responsible for making an initial data load to the DWH, as well as handling the logic required for subsequent loads.
+### 3- ETL_Export_Data.py
+This file has the logic necessary to export the data from each of the DWH tables into csv files for each of the tables.
+
+# Other Files:
+### Answers.sql: 
+File with the necessary queries to answer each of the requested questions: 
+● How many users were active on a given day (they made a deposit or withdrawal) 
+● Identify users haven't made a deposit 
+● Average deposited amount for Level 2 users in the mx jurisdiction 
+● Latest user level for each user within each jurisdiction 
+● Identify on a given day which users have made more than 5 deposits historically 
+● When was the last time a user made a login 
+● How many times a user has made a login between two dates 
+● Number of unique currencies deposited on a given day 
+● Number of unique currencies withdrew on a given day 
+● Total amount deposited of a given currency on a given day
+
+### CSV Files.zip
+This file contains the CSV files corresponding to each of the DWH tables with the corresponding data.
+
+
+# Data Modeling Documentation
 ## Overview
 This project uses a dimensional modeling approach to structure the Data Warehouse. This approach organizes data into fact and dimension tables, facilitating business intelligence (BI) analysis and allowing for insights from multiple perspectives.
 
